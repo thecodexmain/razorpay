@@ -45,7 +45,7 @@ def check_card():
 
     proxy_arg = request.args.get('proxy')
     if not proxy_arg or not proxy_arg.strip():
-        return jsonify({"response": "DEAD | ID: None | Proxy Required"}), 400
+        return jsonify({"response": "DEAD | ID: None | Proxy Required"}), 200
     
     try:
         cc_parts = cc_data.split("|")
