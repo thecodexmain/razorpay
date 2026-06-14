@@ -1,0 +1,6 @@
+telethon
+aiohttp
+aiofiles
+psutil
+motor
+dnspython
