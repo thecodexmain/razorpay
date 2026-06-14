@@ -1,6 +1,4 @@
-telethon
-aiohttp
-aiofiles
-psutil
-motor
-dnspython
+flask
+requests
+urllib3
+gunicorn
