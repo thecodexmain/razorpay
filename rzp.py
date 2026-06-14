@@ -8,6 +8,7 @@ import string
 import secrets
 import hashlib
 import urllib3
+import base64
 from urllib.parse import quote
 from flask import Flask, request, jsonify
 
