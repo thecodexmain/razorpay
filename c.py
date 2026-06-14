@@ -107,7 +107,7 @@ def check_card():
             headers_order = {
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
-                'Connection': 'keep-alive',
+                'Connection': 'close',
                 'Content-Type': 'application/json',
                 'Origin': 'https://pages.razorpay.com',
                 'Referer': 'https://pages.razorpay.com/',
@@ -276,4 +276,4 @@ def check_card():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, threaded=True)
